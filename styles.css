@@ -13,7 +13,6 @@
 .footer{
     background-color:aqua;
     height: 50px;
-    text-align: center;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +21,33 @@
 .hero{
     background-color:blueviolet;
     height: 300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information{
+    background-color:whitesmoke;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    background-color: red;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.call{
+    background-color: yellowgreen;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 body{
     padding:0;
