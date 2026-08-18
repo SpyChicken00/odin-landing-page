@@ -38,8 +38,15 @@
     background-color: red;
     height:200px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.quote p{
+    display:flex;
+    align-self: flex-end;
+    margin-right: 200px;
 }
 
 .call{
