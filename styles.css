@@ -1,13 +1,27 @@
 body{
     margin:0px;
+    font-family: "Roboto", 'Times New Roman', Times, serif;
 }
 ul{
     margin:0px;
     padding:0px;
 }
 
+button{
+    background-color: #3882f6;
+    color:#e5e7eb;
+    border-radius: 5px;
+    padding: 5px 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.hero button{
+    border: 0px;
+}
+
 /* Shared Class Elements */
-.footer, .call, .quote, .quote.inner, .information, .hero{
+.footer, .call, .quote, .quote.inner, .hero{
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -19,21 +33,16 @@ ul{
 
 
 /* MAIN ELEMENTS OF SITE */
- .header, .hero{
-    background-color: teal;
+ .header, .hero, .footer{
     padding:10px 200px;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-    justify-content: space-between;
+    background-color: #1f2937;
+    color:#F9FAF8;  
 }
 
 .hero{
-    padding:32px 200px;
-}
-
-.header nav{
-    background-color: green;
-    
+    justify-content: space-between;
+    align-content:flex-start
 }
 
 .header ul{
@@ -41,29 +50,21 @@ ul{
     align-items: baseline;
     list-style-type:none;
     gap: 50px;
-    margin:0px; 
-}
-
-.header li{
-    align-items: center;
 }
 
 .header a{
     color:inherit;
     text-decoration:none;
-    color:whitesmoke;
-    font-family:'Times New Roman', Times, serif;
 }
 
 .logo{
     margin-right: auto; 
     font-weight: bold;
-    font-size: 30px; 
+    font-size: 20px; 
 }
 
  .container{
     display:flex;
-    justify-content: flex-end;
     background-color:green;
     
  }
@@ -76,10 +77,25 @@ ul{
 
 
 .hero{
-    background-color:blueviolet;
-    height: 300px;
+    min-height: 300px;
+    padding:30px auto;
+    align-items: flex-start;
 }
 
+.hero-main-text{
+    font-size: 40px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-secondary-text{
+    font-size: 18px;
+    color: #e5e7eb
+}
+
+.hero-signup-info{
+    flex: 2 2 600px;
+}
 .container{
     display:flex;
     justify-content: flex-start;
@@ -88,39 +104,73 @@ ul{
 .information{
     background-color:whitesmoke;
     height: 200px;
+    text-align: center;
+}
+
+.information-container{
+    display:flex;
+    gap:100px;
+    justify-content: center;
+}
+
+.item{
+    max-width: 50px;
+    text-align: center;
 }
 
 
 
 
 .quote{
-    background-color:red;
+    background-color:#e5e7eb;
     height:200px;
+    margin:0px
 }
 .quote.inner{
-    background-color: green;
-    height:100px;
     width: 500px;
     flex-direction: column;
+    font-family: 'Gill Sans', 
+    'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
 }
 
 .quote.inner cite{
     align-self: flex-end;
     margin-right: 10px;
     font-weight: bold;
+    
 }
 
 
 
 
 .call{
-    background-color: yellowgreen;
-    height: 100px;
+    background-color: #F9FAF8;
+    height: 200px;
+    padding: 20px, 200px;
+}
+
+.call-container{
+    display:flex;
+    background-color: #3882f6;
+    color:#F9FAF8;
+    border-radius: 4px;
+    padding: 20px 100px;
+    align-items: center;
+    gap: 50px;
+}
+
+.call-container p_{
+    color:gainsboro
+}
+
+.signup-button{
+    border-width: 2px;
+    border-color: #F9FAF8;
 }
 
 
 .footer{
-    background-color:aqua;
     height: 50px;
 }
 
