@@ -14,18 +14,16 @@ img{
 }
 
 button{
-    background-color: #3882f6;
-    color:#e5e7eb;
     border-radius: 5px;
     padding: 5px 30px;
+    margin:10px auto;
     font-weight: bold;
     font-size: 15px;
+    background-color: #3882f6;
+    color:#e5e7eb;
 }
 
-.hero button{
-    border: 0px;
-    /* test */
-}
+
 
 /* Shared Class Elements */
 .footer, .quote, .quote.inner, .hero{
@@ -34,23 +32,15 @@ button{
     align-items: center;  
 }
 
-
-
-
-
-
-/* MAIN ELEMENTS OF SITE */
  .header, .hero, .footer{
     padding:10px 200px;
     background-color: #1f2937;
     color:#F9FAF8;  
 }
 
-.hero{
-    justify-content: space-between;
-    align-content:flex-start
-}
 
+
+/* HEADER - NAVIGATION TO OTHER PAGES */
 .header ul{
     display:flex;
     align-items: baseline;
@@ -72,22 +62,10 @@ button{
     color:#F9FAF8;
 }
 
- .container-column{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color:green;
-    
- }
- .header{
-    flex-basis:1200px;
- }
 
 
 
-
-
+/* HERO - FIRST THING PEOPLE SEE*/
 .hero{
     min-height: 300px;
     padding:30px auto;
@@ -104,21 +82,21 @@ button{
 .hero-secondary-text{
     font-size: 18px;
     color: #e5e7eb;
-    margin:0;
+    margin:5px auto;
 }
 
-/* .hero-signup-info{
-    flex: 2 2 600px;
-} */
-.container{
-    display:flex;
-    justify-content: flex-start;
+.hero button{
+    border: 0px;
 }
 
+
+
+
+/* INFORMATION ABOUT SITE */
 .information{
     background-color:whitesmoke;
     text-align: center;
-    padding: 20px 200px
+    padding: 40px 200px
 }
 
 .information h2{
@@ -135,16 +113,16 @@ button{
 }
 
 .item{
-    flex: 1 1 200px;
+    flex: 0 1 250px;
     text-align: center;
 }
 
 
 
 
+/*QUOTE FAMOUS PERSON */
 .quote{
     background-color:#e5e7eb;
-    /* height:200px; */
     margin:0px;
     padding: 40px 200px;
 }
@@ -173,9 +151,10 @@ button{
 
 
 
+
+/* CALL TO ACTION */
 .call{
     background-color: #F9FAF8;
-    /* height: 400px; */
     padding: 100px 200px;
 }
 
@@ -186,10 +165,8 @@ button{
     border-radius: 4px;
     padding: 50px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 50px;
-    /* margin:50px 0; */
-    
 }
 
 .call-container p{
@@ -205,11 +182,13 @@ button{
     border-width: 2px;
     border-color: #F9FAF8;
     border-style: solid;
+    text-wrap:nowrap;
 }
 
 
+
+
+/* FOOTER - BOTTOM OF PAGE */
 .footer{
     height: 50px;
 }
-
-
